@@ -42,3 +42,4 @@ Having trouble with Pages? Check out our [documentation](https://docs.github.com
 dzis jest piatek
 jutro sobota 
 pojutrze niedziela 
+poniedzialek w Rykach 
