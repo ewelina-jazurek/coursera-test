@@ -1,4 +1,8 @@
-## Welcome to GitHub Pages
+# Welcome to GitHub Pages
+
+I just love **bold text**
+
+*italized text*
 
 Ewelina bla bla bla
 
