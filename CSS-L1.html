@@ -6,65 +6,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anatomy of CSS Rule</title>
-    <style>
-        p {
-            color: mediumblue;
-            font-size: 20px;
-            width: 1000px;
-        }
-
-        h1 {
-            color: seagreen;
-            font-size: 36px;
-            text-align: center;
-        }
-
-        h3 {
-            color: mediumvioletred;
-            font-size: 30px;
-            text-align: center;
-        }
-
-        .highlight {
-            font-size: 20px;
-            font-weight: bold;
-            font-style: italic;
-            background-color: orange;
-            opacity: .6;
-        }
-
-        .bold {
-            background-color: rgb(43, 255, 0);
-            opacity: .4;
-        }
-
-        #mainPoint {
-            font-size: 20px;
-            font-weight: bold;
-            font-style: italic;
-            background-color: rgb(255, 0, 0);
-            opacity: .6;
-            color: black;
-        }
-
-        div {
-            font-size: 16px;
-            color: sienna;
-            font-weight: bold;
-            font-style: italic;
-        }
-
-        p,
-        h1 {
-            color: slateblue;
-            text-align: center;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <h1>Anatomy of CSS Rule</h1>
     <p>Paragraph 1</p>
+    <section>
+        <h2>subheading 1</h2>
+        <div>
+            <article>Article inside div is inside section</article>
+        </div>
+    </section>
+    <section>
+        <article>
+            article is a direct child of the section
+        </article>
+    </section>
+    <h2>subheading 2</h2>
+    <section>
+        article is a direct child of the section
+    </section>
+
+    <h1>
+        Descendant selecor
+    </h1>
+    <section>
+        Table of contents :
+        <ul>
+            <li>Article 1</li>
+            <li>Article 2</li>
+            <li>Article 3</li>
+        </ul>
+
+    </section>
+    <article>
+        Shopping list :
+        <ul>
+            <li>cookies</li>
+            <li>cake</li>
+            <li>pie</li>
+        </ul>
+    </article>
+
     <h3>heading 1</h3>
     <p class="highlight">
         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
@@ -85,7 +69,9 @@
         accident, sometimes on purpose (injected humour and the like).
     </p>
     <h3>heading 3</h3>
-    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some
+    <p class="mainPoint">
+        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in
+        some
         form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use
         a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.
         All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the

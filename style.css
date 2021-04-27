@@ -1,0 +1,82 @@
+p {
+    color: mediumblue;
+    font-size: 20px;
+    width: 1000px;
+}
+
+h1 {
+    color: seagreen;
+    font-size: 36px;
+    text-align: center;
+}
+
+h3 {
+    color: mediumvioletred;
+    font-size: 30px;
+    text-align: center;
+}
+
+.highlight {
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    background-color: orange;
+    opacity: .6;
+}
+
+.bold {
+    background-color: rgb(43, 255, 0);
+    opacity: .4;
+}
+
+#mainPoint {
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    background-color: rgb(255, 0, 0);
+    opacity: .6;
+    color: black;
+}
+
+div {
+    font-size: 16px;
+    color: sienna;
+    font-weight: bold;
+    font-style: italic;
+}
+
+p,
+h1 {
+    color: slateblue;
+    text-align: center;
+}
+
+.highlight {
+    background-color: yellow;
+}
+
+p.highlight {
+    font-size: 10px;
+    color: black;
+}
+
+.highlight.mainPoint {
+    background-color: cadetblue;
+
+}
+
+section>article {
+    color: green;
+    font-size: 24px;
+}
+
+section>h2 {
+    color: blue;
+    font-size: 15px;
+}
+section li {
+    color: chartreuse;
+}
+article li {
+    color: coral;
+}
