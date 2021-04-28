@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        header li {
+            list-style: none;
+        }
+
+        a:link,
+        a:visited {
+            text-decoration: none;
+            background-color: green;
+            display: block;
+            width: 200px;
+            text-align: center;
+            margin-bottom: 1px;
+
+        }
+
+        a:hover,
+        a:active {
+            background-color: red;
+            color: purple;
+        }
+
+        header li:nth-child(2) {
+            font-size: 24px;
+        }
+
+        section div:nth-child(odd) {
+            background-color: gray;
+
+        }
+
+        section div:nth-child(4):hover {
+            background-color: green;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>pseudo class selectors</h1>
+    <header>
+        <ul>
+            <li><a href="/" target=blank>Home</a></li>
+            <li><a href="http://localhost:8080/image.html">piesek</a></li>
+        </ul>
+    </header>
+
+    <section>
+        <div>DIV 1</div>
+        <div>DIV 2</div>
+        <div>DIV 3</div>
+        <div>DIV 4</div>
+        <div>DIV 5</div>
+    </section>
+</body>
