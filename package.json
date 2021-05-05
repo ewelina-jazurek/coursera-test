@@ -1,0 +1,22 @@
+{
+  "name": "coursera-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ewelina-jazurek/coursera-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ewelina-jazurek/coursera-test/issues"
+  },
+  "homepage": "https://github.com/ewelina-jazurek/coursera-test#readme",
+  "dependencies": {
+    "jquery": "^3.6.0"
+  }
+}
