@@ -4,8 +4,63 @@
 <head>
     <meta charset="UTF-8">
     <title>positioning</title>
-    </head>
-    <body>
-         
-    </body>
-    </html>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            margin-bottom: 15px;
+        }
+
+        div {
+            background-color: rgb(238, 209, 43);
+            position: relative;
+            top: 60px;
+        }
+
+        p {
+            width: 50px;
+            height: 50px;
+            border: 1px rgb(106, 33, 158);
+            margin-bottom: 15px;
+        }
+
+        #p1 {
+            background-color: lawngreen;
+            position: relative;
+            top: 65px;
+            left: 65px;
+        }
+
+        #p2 {
+            background-color: rgb(14, 190, 190);
+        }
+
+        #p3 {
+            background-color: magenta;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        #p4 {
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>positioning</h1>
+
+    <div>
+        <p id="p1"></p>
+        <p id="p2"></p>
+        <p id="p3"></p>
+        <p id="p4"></p>
+    </div>
+</body>
+
+</html>
