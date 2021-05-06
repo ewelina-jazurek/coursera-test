@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <button id="launchModal" type="button" data-toggle="modal" data-target="#myModal">Launch modal</button>
+    <button id="launchModal" type="button">Launch modal</button>
     <div class="modal" tabindex="-1" id="myModal">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -47,10 +47,14 @@
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
     <script>
-        $('#myModal').on('shown.bs.modal', function () {
-            $('#myInput').trigger('focus')
-        })
+
+        $('#launchModal').click(() => {
+            console.log('button click');
+            $('#launchModal').addClass("btn btn-danger");
+            $('#myModal').modal('show')
+        });
     </script>
+
 </body>
 
 </html>
