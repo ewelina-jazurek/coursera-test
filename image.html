@@ -6,9 +6,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>piesek</title>
+    <link href="node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <style>
+        h1 {
+            color: tomato;
+        }
+    </style>
 </head>
 
 <body>
+    <button id="launchModal" type="button">Launch modal</button>
+    <div class="modal" tabindex="-1" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Modal body text goes here.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <h1>Piesek</h1>
     <br>
     <img src="https://static.toiimg.com/thumb/msid-60132235,imgsize-169468,width-800,height-600,resizemode-75/60132235.jpg"
@@ -18,5 +44,17 @@
     <a href="index.html">link do strony glownej</a>
     <br>
     <a href="link-img.html">link do slonecznikow</a>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script>
+
+        $('#launchModal').click(() => {
+            console.log('button click');
+            $('#launchModal').addClass("btn btn-danger");
+            $('#myModal').modal('show')
+        });
+    </script>
+
 </body>
+
 </html>
