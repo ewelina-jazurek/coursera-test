@@ -1,4 +1,8 @@
-## Welcome to GitHub Pages
+# Welcome to GitHub Pages
+
+I just love **bold text**
+
+*italized text*
 
 Ewelina bla bla bla
 
@@ -43,4 +47,3 @@ dzis jest piatek
 jutro sobota 
 pojutrze niedziela 
 poniedzialek w Rykach 
-wtorek nie 
