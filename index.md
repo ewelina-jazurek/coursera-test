@@ -47,4 +47,3 @@ dzis jest piatek
 jutro sobota 
 pojutrze niedziela 
 poniedzialek w Rykach 
-wtorek nie
