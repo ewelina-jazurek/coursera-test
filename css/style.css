@@ -1,0 +1,215 @@
+h1 {
+    width: 600px;
+    height: 60px;
+    border: 1px solid rgba(12, 143, 12, 0.623);
+    background-color: forestgreen;
+    color: ghostwhite;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#top {
+    width: 600px;
+    height: 60px;
+    border: 1px solid rgba(12, 143, 12, 0.623);
+    background-color: forestgreen;
+    color: ghostwhite;
+    font-size: medium;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+#bottom {
+    width: 600px;
+    height: 200px;
+    border: 1px solid rgba(12, 143, 12, 0.623);
+    background-color: forestgreen;
+    color: ghostwhite;
+    font-size: medium;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    background-color: gold;
+    color: rgb(6, 87, 6);
+    font-size: x-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#header-nav {
+    background-color: forestgreen;
+    border: 0;
+}
+
+p {
+    width: 400px;
+    height: 300px;
+    background-color: gold;
+    text-align: center;
+    width: 20%;
+    float: left;
+    border: 10px solid rgba(12, 143, 12, 0.623);
+}
+
+.bgSizeContain {
+    width: 100px;
+    height: 150px;
+    resize: both;
+    background: center contain no-repeat url ("images/i-grupa-azoty-saletrzak-27-25kg.jpeg");
+}
+
+
+* {
+    box-sizing: 200 px 200 px;
+}
+    #logo-img {
+        background: url('../images/logo-rolmet.png') no-repeat;
+        width: 500px;
+        height: 150px;
+
+    }
+
+img {
+
+    width: 200px;
+    height: 150px;
+    aspect-ratio: auto 150 / 50;
+    background-color: gold;
+    width: 20%;
+    float: left;
+    border: 10px solid rgba(12, 143, 12, 0.623);
+}
+
+@media (min-width: 1200px) {
+
+    .col-lg-1,
+    .col-lg-2,
+    .col-lg-3,
+    .col-lg-4,
+    .col-lg-5,
+    .col-lg-6,
+    .col-lg-7,
+    .col-lg-8,
+    .col-lg-9,
+    .col-lg-10,
+    .col-lg-11,
+    .col-lg-12 {
+        float: left;
+        border: 1px yellowgreen;
+    }
+
+    .col-lg-1 {
+        width: 8.33%;
+    }
+
+    .col-lg-2 {
+        width: 16.66%;
+    }
+
+    .col-lg-3 {
+        width: 25%;
+    }
+
+    .col-lg-4 {
+        width: 33%;
+    }
+
+    .col-lg-5 {
+        width: 41.66%;
+    }
+
+    .col-lg-6 {
+        width: 50%;
+    }
+
+    .col-lg-7 {
+        width: 58.33%;
+    }
+
+    .col-lg-8 {
+        width: 66.66%;
+    }
+
+    .col-lg-9 {
+        width: 74.99%;
+    }
+
+    .col-lg-10 {
+        width: 83.33%;
+    }
+
+    .col-lg-11 {
+        width: 91.66%;
+    }
+
+    .col-lg-12 {
+        width: 100%;
+    }
+}
+
+@media (min-width: 950px) and (max-width: 1199px) {
+
+
+    .col-md-1,
+    .col-md-2,
+    .col-md-3,
+    .col-md-4,
+    .col-md-5,
+    .col-md-6,
+    .col-md-7,
+    .col-md-8,
+    .col-md-9,
+    .col-md-10,
+    .col-md-11,
+    .col-md-12 {
+        float: left;
+        border: 1px yellowgreen;
+    }
+
+    .col-md-1 {
+        width: 8.33%;
+    }
+
+    .col-md-2 {
+        width: 16.66%;
+    }
+
+    .col-md-3 {
+        width: 25%;
+    }
+
+    .col-md-4 {
+        width: 33%;
+    }
+
+    .col-md-5 {
+        width: 41.66%;
+    }
+
+    .col-md-6 {
+        width: 50%;
+    }
+
+    .col-md-7 {
+        width: 58.33%;
+    }
+
+    .col-md-8 {
+        width: 66.66%;
+    }b
+
+    .col-md-9 {
+        width: 74.99%;
+    }
+
+    .col-md-10 {
+        width: 83.33%;
+    }
+
+    .col-md-11 {
+        width: 91.66%;
+    }
+
+    .col-md-12 {
+        width: 100%;
+    }
+}
