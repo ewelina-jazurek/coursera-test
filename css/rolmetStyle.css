@@ -7,26 +7,40 @@ h1 {
 
 #logo-img {
     background-image: url(../images/logo-rolmet.png);
-    height: 60px;
+    height: 80px;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 .col, .col-4 {
-    border: 1px solid red;
-    background-color: pink;
+    border: 1px solid rgba(12, 143, 12, 0.623);
+    background-color: forestgreen;
 
 }
 #top {
-    width: 1200px;
+    height: 350px;
+    border: 1px solid rgba(12, 143, 12, 0.623);
+    background-color: forestgreen;
+    background-image: url(../images/map.png);
+    background-size: contain;
+    color: ghostwhite;
+    font-size: medium;
+    background-position-x: 300px;
+    background-repeat: no-repeat;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#map {
     height: 350px;
     border: 1px solid rgba(12, 143, 12, 0.623);
     background-color: forestgreen;
     background-image: url(../images/sklad1.jpeg);
     color: ghostwhite;
     font-size: medium;
-    background-position-x: 400px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
 }
 
 body {
@@ -53,9 +67,10 @@ body {
     width: 400px;
     height: 300px;
     background: center url(../images/i-grupa-azoty-saletrzak-27-25kg.jpeg);
-    text-align: left;
+    background-size: contain;
+    text-align: bottom left;
     font-size: xx-large;
-    color: green;
+    color: darkblue;
     float: left;
     border: 10px solid rgba(12, 143, 12, 0.623);
 }
@@ -63,10 +78,11 @@ body {
 #p2 {
     width: 400px;
     height: 300px;
-    background: center url(../images/wegiel4.jpeg);
-    text-align: left;
+    background: no-repeat center url(../images/wegiel4.jpeg);
+    background-size: contain;
+    text-align: bottom left;
     font-size: xx-large;
-    color: green;
+    color: white;
     float: left;
     border: 10px solid rgba(12, 143, 12, 0.623);
 }
@@ -74,10 +90,11 @@ body {
 #p3 {
     width: 400px;
     height: 300px;
-    background: center url(../images/cement.jpeg);
-    text-align: left;
+    background: no-repeat url(../images/sklad-budowlany2.jpeg);
+    background-size: cover;
+    text-align: end left;
     font-size: xx-large;
-    color: green;
+    color: red;
     float: left;
     border: 10px solid rgba(12, 143, 12, 0.623);
 }
@@ -85,20 +102,22 @@ body {
 #p4 {
     width: 400px;
     height: 300px;
-    background: center url(../images/uslugi-transp.jpeg);
-    text-align: left;
+    background: no-repeat url(../images/uslugi-transp.jpeg);
+    background-size: cover;
+    text-align: left;   
     font-size: xx-large;
-    color: green;
+    color: white;
     float: left;
     border: 10px solid rgba(12, 143, 12, 0.623);
 }
 
 #bottom {
-    width: 600px;
-    height: 200px;
+   
+    height: 60px;
     border: 1px solid rgba(12, 143, 12, 0.623);
     background-color: forestgreen;
     color: ghostwhite;
-    font-size: medium;
+    font-size: large;
+    text-align: center left;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
