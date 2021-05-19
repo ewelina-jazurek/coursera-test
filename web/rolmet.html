@@ -17,14 +17,40 @@
 <body>
     <div class="container">
 
-        <div class="row">
-            <div class="col-4">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">
                 <div id="logo-img" alt="Logo image"></div>
-            </div>
-            <div class="col">
-            </div>
+            </a>
 
-        </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Oferta
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Nawozy</a>
+                            <a class="dropdown-item" href="#">Węgiel</a>
+                            <a class="dropdown-item" href="#">Materiały budowlane</a>
+                            <a class="dropdown-item" href="#">Usługi transportowe</a>
+                        </div>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
 
         <h4 id="offerList">
             * NAWOZY * WĘGIEL * MATERIAŁY BUDOWLANE* USŁUGI TRANSPORTOWE
@@ -40,7 +66,8 @@
                     <div>ROLMET S.C.</div>
                     <div>Borki 2, 08503 Nowodwór</div>
                     <div class="glyphicon glyphicon-phone-alt">
-                       <a href="tel. 818661196"></a> tel. 818661196</div>
+                        <a href="tel. 818661196"></a> tel. 818661196
+                    </div>
 
                     <div>e-mail:
                         <a href="mailto:marek.rolmet@gmail.com">marek.rolmet@gmail.com</a>
@@ -74,6 +101,9 @@
             <a href="mailto:marek.rolmet@gmail.com"> marek.rolmet@gmail.com</a>
         </div>
     </div>
+
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
 
 </body>
 

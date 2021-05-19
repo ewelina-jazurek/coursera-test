@@ -1,16 +1,31 @@
+body {
+    font-size: x-large;
+    background-color: #9AE19D;
+}
+
+.container {
+    color: #0C793B;
+    background-color: #9AE19D;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/* -------- header ------- */ 
+
 #logo-img {
     background-image: url(../images/logo_horizontal..png);
-    height: 80px;
+    width: 260px;
+    height: 100px;
     background-size: contain;
     background-repeat: no-repeat;
     background-color: #9AE19D;
 }
 
-h4 {
+#offerList {
     height: 80px;
     text-align: center;
     background-color: #ffeb56;
 }
+
+/* -------- /header ------- */ 
 
 #top {
     height: 350px;
@@ -20,7 +35,7 @@ h4 {
     background-position-x: 300px;
     background-repeat: no-repeat;
     background-color: #D0F0D3;
-    }
+}
 
 #map {
     height: 350px;
@@ -30,10 +45,6 @@ h4 {
     background-repeat: no-repeat;
     background-size: contain;
     background-color: #D0F0D3;
-    }
-
-body {
-    font-size: x-large;
 }
 
 #header-nav {
@@ -101,10 +112,3 @@ body {
     text-align: center left;
 }
 
-.container {
-    color: #0C793B;
-    background-color: #9AE19D;
-    margin: #f1dca7 auto;
-    border-color: #ffe5d9;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
