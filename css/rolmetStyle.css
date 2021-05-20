@@ -19,6 +19,16 @@ body {
     background-color: #9AE19D;
 }
 
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+    justify-content: space-around;
+}
+
+.dropdown-item {
+  background-color: #D0F0D3;  
+}
+
+
 #offerList {
     height: 80px;
     text-align: center;
