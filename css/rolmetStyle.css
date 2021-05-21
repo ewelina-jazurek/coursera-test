@@ -25,6 +25,10 @@ body {
     justify-content: space-around;
 }
 
+li {
+    margin: 20px;
+}
+
 .dropdown-item {
     background-color: #D0F0D3;
     color: #0C793B;
@@ -82,14 +86,6 @@ body {
     font-size: large;
 }
 
-.bgSizeCover {
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 400px;
-    height: 300px;
-    resize: both;
-}
-
 #nawozy {
     height: 400px;
     background: no-repeat center url(../images/i-grupa-azoty-saletrzak-27-25kg.jpeg);
@@ -117,7 +113,7 @@ body {
     background-size: cover;
     text-align: end left;
     font-size: xx-large;
-    color: red;
+    color: darkblue;;
     margin-right: 30px;
 }
 
