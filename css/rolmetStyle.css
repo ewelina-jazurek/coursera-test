@@ -120,11 +120,23 @@ li {
 #useNawozy {
     height: 450px;
     border: 5px solid #0C793B; 
-    font-size: 16px;
+    font-size: 14px;
 }
 
 #saletrzak {
-    ../images/i-grupa-azoty-saletrzak-27-25kg.jpeg
+    height: 450px;
+    border: 5px solid #0C793B; 
+    background: no-repeat bottom url(../images/i-grupa-azoty-saletrzak-27-25kg.jpeg);
+    background-color: white;
+    background-size: contain; 
+    font-size: 16px;
+}
+
+#detailSaletrzak {
+    height: 450px;
+    border: 5px solid #0C793B; 
+    background: no-repeat center url(../images/details_saletrzak.png);
+    background-size: contain; 
 }
 
 #węgiel {
