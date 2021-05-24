@@ -102,18 +102,25 @@ li {
 }
 
 #saletra {
-    height: 300px;
+    height: 450px;
     border: 5px solid #0C793B; 
-    background: no-repeat right url(../images/Saletra-Amonowa-Pulan.jpeg);
-    background-size: cover; 
+    background: no-repeat bottom url(../images/pulan.jpeg);
+    background-color: white;
+    background-size: contain; 
     font-size: 16px;
 }
 
 #detailSaletra {
-    height: 300px;
+    height: 450px;
     border: 5px solid #0C793B; 
-    background: no-repeat center url(../images/Saletra-Amonowa-Pulan.jpeg);
-    background-size: cover; 
+    background: no-repeat center url(../images/details_Pulan.png);
+    background-size: contain; 
+}
+
+#useNawozy {
+    height: 450px;
+    border: 5px solid #0C793B; 
+    font-size: 16px;
 }
 
 #saletrzak {
