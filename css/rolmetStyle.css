@@ -101,42 +101,47 @@ li {
     color: white;
 }
 
-#saletra {
+.nameNawoz {
     height: 450px;
-    border: 5px solid #0C793B; 
+    border: 5px solid #0C793B;
+    background-color: white;
+    background-size: contain;
+    font-size: 16px;
+}
+
+.detailNawoz {
+    height: 450px;
+    border: 5px solid #0C793B;
+}
+
+#saletra {
     background: no-repeat bottom url(../images/pulan.jpeg);
     background-color: white;
-    background-size: contain; 
+    background-size: contain;
     font-size: 16px;
 }
 
 #detailSaletra {
-    height: 450px;
-    border: 5px solid #0C793B; 
     background: no-repeat center url(../images/details_Pulan.png);
-    background-size: contain; 
+    background-size: contain;
 }
 
-#useNawozy {
+.useNawozy {
     height: 450px;
-    border: 5px solid #0C793B; 
+    border: 5px solid #0C793B;
     font-size: 14px;
 }
 
 #saletrzak {
-    height: 450px;
-    border: 5px solid #0C793B; 
     background: no-repeat bottom url(../images/i-grupa-azoty-saletrzak-27-25kg.jpeg);
     background-color: white;
-    background-size: contain; 
+    background-size: contain;
     font-size: 16px;
 }
 
 #detailSaletrzak {
-    height: 450px;
-    border: 5px solid #0C793B; 
     background: no-repeat center url(../images/details_saletrzak.png);
-    background-size: contain; 
+    background-size: contain;
 }
 
 #węgiel {
