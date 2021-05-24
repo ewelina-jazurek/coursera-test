@@ -144,6 +144,18 @@ li {
     background-size: contain;
 }
 
+#salmag {
+    background: no-repeat bottom url(../images/salmag.png);
+    background-color: white;
+    background-size: contain;
+    font-size: 16px; 
+}
+
+#detailSalmag {
+    background: no-repeat center url(../images/details_salmag.png);
+    background-size: contain;
+}
+
 #węgiel {
     height: 400px;
     background: no-repeat center url(../images/wegiel4.jpeg);
