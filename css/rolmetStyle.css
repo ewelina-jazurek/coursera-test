@@ -169,7 +169,7 @@ li {
 #materiały {
     height: 400px;
     background: no-repeat url(../images/sklad-budowlany2.jpeg);
-    background-size: cover;
+    background-size: auto;
     text-align: end left;
     font-size: xx-large;
     color: white;
