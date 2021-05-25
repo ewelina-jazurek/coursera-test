@@ -8,7 +8,8 @@ body {
     background-color: #9AE19D;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-/* -------- header ------- */ 
+
+/* -------- header ------- */
 
 #logo-img {
     background-image: url(../images/logo_horizontal..png);
@@ -19,15 +20,19 @@ body {
     background-color: #9AE19D;
 }
 
-.navbar-light .navbar-nav .nav-link {
-    color: black;
+.navbar-light .navbar-nav .show>.nav-link, .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active {
+    color: #0C793B;
     justify-content: space-around;
 }
 
-.dropdown-item {
-  background-color: #D0F0D3;  
+li {
+    margin: 20px;
 }
 
+.dropdown-item {
+    background-color: #D0F0D3;
+    color: #0C793B;
+}
 
 #offerList {
     height: 80px;
@@ -35,26 +40,43 @@ body {
     background-color: #ffeb56;
 }
 
-/* -------- /header ------- */ 
+/* -------- /header ------- */
 
-#top {
-    height: 350px;
-    background-image: url(../images/map.png);
+#address {
+    height: 400px;
     background-size: contain;
     font-size: medium;
-    background-position-x: 300px;
     background-repeat: no-repeat;
     background-color: #D0F0D3;
 }
 
+#zapraszamy {
+    font-weight: bold;
+    text-align: center;
+}
+
 #map {
-    height: 350px;
+    height: 400px;
+    background-image: url(../images/map.png);
+    font-size: medium;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #D0F0D3;
+    margin-left: 15px;
+    margin-right: 15px;
+    text-align: center;
+}
+
+#overviewPhoto {
+    height: 400px;
     background-image: url(../images/sklad1.jpeg);
     font-size: medium;
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: contain;
     background-color: #D0F0D3;
+    text-align: center;
 }
 
 #header-nav {
@@ -64,56 +86,103 @@ body {
     font-size: large;
 }
 
-.bgSizeCover {
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 400px;
-    height: 300px;
-    resize: both;
-}
-
-#p1 {
-    width: 400px;
-    height: 300px;
-    background: no-repeat center url(../images/i-grupa-azoty-saletrzak-27-25kg.jpeg);
+#nawozy {
+    height: 400px;
+    background: no-repeat center url(../images/Nawozy.jpeg);
     background-size: cover;
     text-align: end left;
     font-size: xx-large;
-    color: darkblue;
-    float: left;
+    color: white;
+    margin-right: 30px;
+    margin-bottom: 30px;
 }
 
-#p2 {
-    width: 400px;
-    height: 300px;
+.offerLink {
+    color: white;
+}
+
+.nameNawoz {
+    height: 450px;
+    border: 5px solid #0C793B;
+    background-color: white;
+    background-size: contain;
+    font-size: 16px;
+}
+
+.detailNawoz {
+    height: 450px;
+    border: 5px solid #0C793B;
+}
+
+#saletra {
+    background: no-repeat bottom url(../images/pulan.jpeg);
+    background-color: white;
+    background-size: contain;
+    font-size: 16px;
+}
+
+#detailSaletra {
+    background: no-repeat center url(../images/details_Pulan.png);
+    background-size: contain;
+}
+
+.useNawozy {
+    height: 450px;
+    border: 5px solid #0C793B;
+    font-size: 14px;
+}
+
+#saletrzak {
+    background: no-repeat bottom url(../images/i-grupa-azoty-saletrzak-27-25kg.jpeg);
+    background-color: white;
+    background-size: contain;
+    font-size: 16px;
+}
+
+#detailSaletrzak {
+    background: no-repeat center url(../images/details_saletrzak.png);
+    background-size: contain;
+}
+
+#salmag {
+    background: no-repeat bottom url(../images/salmag.png);
+    background-color: white;
+    background-size: contain;
+    font-size: 16px; 
+}
+
+#detailSalmag {
+    background: no-repeat center url(../images/details_salmag.png);
+    background-size: contain;
+}
+
+#węgiel {
+    height: 400px;
     background: no-repeat center url(../images/wegiel4.jpeg);
     background-size: cover;
     text-align: bottom left;
     font-size: xx-large;
     color: white;
-    float: left;
+    margin-bottom: 30px;
 }
 
-#p3 {
-    width: 400px;
-    height: 300px;
+#materiały {
+    height: 400px;
     background: no-repeat url(../images/sklad-budowlany2.jpeg);
-    background-size: cover;
+    background-size: auto;
     text-align: end left;
     font-size: xx-large;
-    color: red;
-    float: left;
+    color: white;
+    margin-right: 30px;
 }
 
-#p4 {
-    width: 400px;
-    height: 300px;
+#usługi {
+    height: 400px;
     background: no-repeat url(../images/uslugi-transp.jpeg);
     background-size: cover;
     text-align: left;
     font-size: xx-large;
     color: white;
-    float: left;
 }
 
 #bottom {
@@ -121,4 +190,3 @@ body {
     font-size: large;
     text-align: center left;
 }
-
