@@ -110,3 +110,5 @@ console.log(doubleAll(10));
 
 // Fake Namespaces
 var name = "John"
+
+console.log
