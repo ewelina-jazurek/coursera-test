@@ -108,7 +108,20 @@ var doubleAll = makeMultiplier(2);
 console.log(doubleAll(10));
 
 
-// Fake Namespaces
-var name = "John"
+// Fake Namespaces ?????
+var boy = "John";
+function sayHi () {
+    console.log("Hi " + boy);
+}
 
-console.log
+
+// immediately invoked function expression 
+// IIFE
+(function () {
+    console.log("Hello Coursera!");
+})();
+
+(function (name) {
+    console.log("Hello " + name);
+})("Coursera"); 
+ 
