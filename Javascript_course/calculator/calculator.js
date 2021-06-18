@@ -21,14 +21,17 @@
         break;
         case 'minus': 
         setResult(parseInt(firstArgInput.value) - parseInt(secondArgInput.value));
-        break;       
+        break;   
+        case 'multiply': 
+        setResult(parseInt(firstArgInput.value) * parseInt(secondArgInput.value));
+        break;
+        case 'divide': 
+        setResult(parseInt(firstArgInput.value) / parseInt(secondArgInput.value));
+        break;             
       }
       
     });
   }
-
-  // minus 
-
 
   function setResult(result) {
     document.getElementById('result').innerHTML = result;
