@@ -51,11 +51,14 @@ document.addEventListener("DOMContentLoaded",
 
 
         document.querySelector("body")
-        addEventListener("mousemove"),
-            function (event) {
-                console.log(event.clientX);
-                console.log(event.clientY);
-            }
+            .addEventListener("mousemove",
+                function (event) {
+                    if (event.shiftKey === true) {
+                        console.log("x: " + event.clientX);
+                        console.log("y: " + event.clientY);
+                    }
 
+                }
+            );
     }
 );
