@@ -1,3 +1,5 @@
+const { event } = require("jquery");
+
 (function () {
 
 
@@ -19,6 +21,8 @@
       let resultToDisplay;
 
       switch (operation.value) {
+
+
         case 'plus':
           resultToDisplay = sumCalculation(firstArg, secondArg);
           break;
@@ -62,6 +66,27 @@
       return arg1 / arg2;
     }
   }
+
+
+  // ??????????
+  // const selectElement = document.querySelector ('.color')
+  // selectElement.addEventListener('switch', (event)  => {
+  //   const result = document.querySelector('.result');
+  // result. ????
+  // });
+
+
+// function addEventListener('switch', (event)  => {
+
+//   const selectElement = document.querySelector ('operation.color')
+//  if (querySelector === + {
+//    color = yellow 
+//  }
+
+
+  // });
+
+  
 
   // todo: write program which calculate value 
   // base on input values on calculate btn click
