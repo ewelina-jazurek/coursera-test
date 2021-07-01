@@ -1,4 +1,3 @@
-const { event } = require("jquery");
 
 (function () {
 
@@ -6,6 +5,7 @@ const { event } = require("jquery");
   const firstArgInput = document.getElementById('firstArg');
   const secondArgInput = document.getElementById('secondArg');
   const operation = document.getElementById('operation');
+  const result = sumCalculation(2, 3);
 
   registerCalculateClick();
 
@@ -40,6 +40,11 @@ const { event } = require("jquery");
       setResult(resultToDisplay);
 
     });
+  }
+
+  // switch color 
+  function registerSwitchOperation() {
+    document.getElementById('operation')
   }
 
   function setResult(result) {
