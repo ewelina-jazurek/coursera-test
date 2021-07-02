@@ -9,7 +9,7 @@
 // const age = 30;
 // console.log(age);
 
-let score ;
+let score;
 score = 10;
 console.log(score);
 
@@ -29,11 +29,11 @@ console.log(`my name is ${firstname} and I am ${age}`);
 
 const s = 'hello world';
 
-console.log(s.substring(0, 5)); 
+console.log(s.substring(0, 5));
 console.log(s.substring(0, 5).toUpperCase());
 
 // split by letter
-console.log(s.split('')); 
+console.log(s.split(''));
 
 // split by word 
 const t = 'technology, computers, it, code';
@@ -45,7 +45,7 @@ console.log(t.split(', '));
 line
 comment */
 
-const numbers = new Array(1,2,3,4,5);
+const numbers = new Array(1, 2, 3, 4, 5);
 console.log(numbers);
 
 const fruits = ['apples', 'oranges', 'pears'];
@@ -68,7 +68,7 @@ console.log(fruits.indexOf('oranges'));
 
 
 // array is 0 based 
-console.log(fruits);    
+console.log(fruits);
 
 
 // OBJECT LITERALS 
@@ -91,7 +91,7 @@ console.log(person.firstName, person.lastName);
 console.log(person.hobbies[1]);
 console.log(person.address.city);
 
-const { firstName, lastName, address: { city }} = person;
+const { firstName, lastName, address: { city } } = person;
 console.log(firstName);
 console.log(city);
 
@@ -99,3 +99,36 @@ person.email = 'john@gmail.com';
 console.log(person);
 
 
+const todos = [
+    {
+        id: 1,
+        todo: 'take out trash',
+        isCompleted: true
+    },
+    {
+        id: 2,
+        todo: 'meeting with boss',
+        isCompleted: true
+    },
+    {
+        id: 3,
+        todo: 'dentist appt',
+        isCompleted: false
+    }
+];
+
+console.log(todos[1].todo);
+
+
+// JSON
+const todoJSON = JSON.stringify(todos);
+console.log(todoJSON);
+
+
+// LOOPS
+
+// for 
+for(let i = 0; i <= 10; i++) {
+    console.log(i); 
+    console.log(`For Loop Number: $(i)`); 
+}
