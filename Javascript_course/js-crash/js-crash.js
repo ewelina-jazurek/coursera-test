@@ -132,3 +132,35 @@ for(let i = 0; i <= 10; i++) {
     console.log(i); 
     console.log(`For Loop Number: $(i)`); 
 }
+
+let i = 0;
+while(i < 10) {
+    console.log(`While Loop Number`);
+    i++;
+}
+
+for(let i = 0; i < todos.length; i++) {
+    console.log(todos[i].todo);
+}
+
+for(let sth of todos) {
+    console.log(sth.id);
+}
+
+
+// forEach, map, filter
+todos.forEach(function(sth) {
+    console.log(sth.todo);
+});
+
+const sthTodo = todos.map(function(sth) {
+  return sth.todo 
+});
+console.log(sthTodo);
+
+
+const sthCompleted = todos.filter(function(sth) {
+    return sth.isCompleted === true;
+  });
+  
+  console.log(sthCompleted);
