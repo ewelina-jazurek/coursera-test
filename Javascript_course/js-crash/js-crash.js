@@ -128,39 +128,100 @@ console.log(todoJSON);
 // LOOPS
 
 // for 
-for(let i = 0; i <= 10; i++) {
-    console.log(i); 
-    console.log(`For Loop Number: $(i)`); 
+for (let i = 0; i <= 10; i++) {
+    console.log(i);
+    console.log(`For Loop Number: $(i)`);
 }
 
 let i = 0;
-while(i < 10) {
+while (i < 10) {
     console.log(`While Loop Number`);
     i++;
 }
 
-for(let i = 0; i < todos.length; i++) {
+for (let i = 0; i < todos.length; i++) {
     console.log(todos[i].todo);
 }
 
-for(let sth of todos) {
+for (let sth of todos) {
     console.log(sth.id);
 }
 
 
 // forEach, map, filter
-todos.forEach(function(sth) {
+todos.forEach(function (sth) {
     console.log(sth.todo);
 });
 
-const sthTodo = todos.map(function(sth) {
-  return sth.todo 
+const sthTodo = todos.map(function (sth) {
+    return sth.todo
 });
 console.log(sthTodo);
 
 
-const sthCompleted = todos.filter(function(sth) {
+const sthCompleted = todos.filter(function (sth) {
     return sth.isCompleted === true;
-  });
-  
-  console.log(sthCompleted);
+});
+
+console.log(sthCompleted);
+
+
+//   CONDITIONALS
+
+// const x = '10';
+
+// if(x == 10) {
+//  console.log('x is 10');   
+
+
+// if ... else 
+// const x = 1;
+
+// if(x ) {
+//  console.log('x is 10');   
+// } 
+// else if(x > 10) {
+//     console.log('x is greater than 10');
+// }
+// else {
+//     console.log('x is less than 10');
+// }
+
+
+//  OR || = 1 has to be true 
+// const x = 4;
+// const y = 11;
+
+// if(x > 5 || y > 10) {
+//  console.log('x is more than 5 or y is more than 10');   
+// } 
+
+//  AND && = both has to be true 
+const x = 6;
+const y = 11;
+
+if (x > 5 && y > 10) {
+    console.log('x is more than 5 and y is more than 10');
+}
+
+
+
+var c = 10;
+var c = 3;
+var color = c > 10 ? 'red' : 'blue';
+var color = 'green';
+console.log(color);
+
+
+// SWITCH 
+switch (color) {
+    case 'red':
+        console.log('color is red');
+        break;
+    case 'blue':
+        console.log('color is blue');
+        break;
+    default:
+        console.log('color is NOT red or blue');
+        break;
+}
