@@ -225,3 +225,68 @@ switch (color) {
         console.log('color is NOT red or blue');
         break;
 }
+
+
+// FUNCTIONS // FUNCTIONS // FUNCTIONS // 
+
+function addNums(num1 = 1, num2 = 1) {
+    console.log(num1 + num2);
+}
+// call function : 
+addNums(5, 6);
+
+// return 
+
+function addNums(num1 = 1, num2 = 1) {
+    return num1 + num2;
+}
+console.log(addNums(3, 4));
+
+//the same but without word "function"
+var addNums = (num1, num2) => {
+    return num1 + num2;
+}
+console.log(addNums(3, 4));
+
+// the same without "return"
+var addNums = (num1, num2) => num1 + num2;
+console.log(addNums(3, 4));
+
+
+// OBJECT LITERALS 
+
+//  * lexical "this"
+//  Constructor function 
+
+function Person(firstName, lastName, dob) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.dob = new Date(dob);
+    // this.getBirthYear = function() {
+    //     return this.dob.getFullYear();
+    // }
+    this.getFullName = function () {
+        return `${this.firstName} ${this.lastName}`;
+    }
+}
+
+Person.prototype.getFullYear = function () {
+    return this.dob.getFullYear();
+}
+
+// CLASS 
+class Person {
+    constructor(firstName, lastName, dob) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.dob = new Date(dob);
+    }
+}
+
+//  Instantiate object 
+var person1 = new Person('John', 'Doe', '4-3-80');
+var person2 = new Person('Mary', 'Smith', '3-6-90');
+
+// console.log(person1.getBirthYear());
+console.log(person1.getFullName());
+console.log(person1);
