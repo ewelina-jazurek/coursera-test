@@ -287,7 +287,7 @@ class Person1 {
     }
 
     getFullName() {
-        return `${this.firstName} ${this.lastName}`;  
+        return `${this.firstName} ${this.lastName}`;
     }
 }
 
@@ -330,3 +330,24 @@ console.log(document.querySelectorAll('.item'));
 //???? console.log(document.getElementByClassName('item')); ????
 console.log(document.getElementsByTagName('li'));
 
+
+// ???
+// var items = document.querySelectorAll('.item');
+// items.forEach(item) => console.log(item);
+
+
+var ul = document.querySelector('items');
+
+// ul.remove();
+// ul.lastElementChild.remove();
+// ul.firstElementChild.textContent = 'Hello';
+// ul.children[1].innerText = 'Brad';
+// ul.lastElementChild.innerHTML = '<h1>Hello</h1>';
+
+
+const btn = document.querySelector('btn');
+// btn.style.background = 'red';
+
+
+// EVENTS 
+btn.addEventListener('click');
