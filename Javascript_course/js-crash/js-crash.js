@@ -298,3 +298,35 @@ var person2 = new Person('Mary', 'Smith', '3-6-90');
 // console.log(person1.getBirthYear());
 console.log(person1.getFullName());
 console.log(person1);
+
+
+/* window object 
+= parent object of the browser */
+
+console.log(window);
+// alert(1);
+// window.alert(2);
+
+
+
+// SELECTORS 
+
+// single element selector - to select only 1 thing
+
+//  * getElementById
+console.log(document.getElementById('my-form'));
+// = 
+var form = document.getElementById('my-form');
+console.log(form);
+
+//  * querySelector =  works like jquery 
+console.log(document.querySelector('.container'));
+console.log(document.querySelector('h1'));
+
+
+
+// multiple element selector  - to select more than 1 thing
+console.log(document.querySelectorAll('.item'));
+//???? console.log(document.getElementByClassName('item')); ????
+console.log(document.getElementsByTagName('li'));
+
