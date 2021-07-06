@@ -275,11 +275,19 @@ Person.prototype.getFullYear = function () {
 }
 
 // CLASS 
-class Person {
+class Person1 {
     constructor(firstName, lastName, dob) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.dob = new Date(dob);
+    }
+
+    getBirthYear() {
+        return this.dob.getFullYear();
+    }
+
+    getFullName() {
+        return `${this.firstName} ${this.lastName}`;  
     }
 }
 
