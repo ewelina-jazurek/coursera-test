@@ -75,6 +75,34 @@ var lastedTenYears = companies.filter(company =>
 
 console.log(lastedTenYears);
 
-// map
-// sort 
-// reduce 
+
+// MAP
+
+// create array of company names 
+var companyNames = companies.map(function(company) {
+  return company.name;  
+});
+console.log(companyNames);
+
+var test = companies.map(function(company) {
+    return 1;  
+  });
+console.log(test);
+
+var testMap = companies.map(function(company) {
+    return `${company.name} [${company.start} - ${company.end}]`;  
+  });
+
+// the same - shorter method 
+  var testMap = companies.map(company => `${company.name} 
+  [${company.start} - ${company.end}]`);
+
+console.log(testMap);
+
+
+var agesSquare = ages.map(age => Math.sqrt(age));
+console.log(agesSquare);
+
+
+// SORT
+// REDUCE 
