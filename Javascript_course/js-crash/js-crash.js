@@ -336,28 +336,67 @@ console.log(document.getElementsByTagName('li'));
 // items.forEach(item) => console.log(item);
 
 
-var ul = document.querySelector('items');
+var ul = document.querySelector('.items');
 
 // ul.remove();
-// ul.lastElementChild.remove();
-// ul.firstElementChild.textContent = 'Hello';
-// ul.children[1].innerText = 'Brad';
-// ul.lastElementChild.innerHTML = '<h1>Hello</h1>';
+ul.lastElementChild.remove();
+ul.firstElementChild.textContent = 'Hello';
+ul.children[1].innerText = 'Brad';
+ul.lastElementChild.innerHTML = '<h1>Hello</h1>';
 
 
-var btn = document.querySelector('btn');
-// btn.style.background = 'red';
+var btn = document.querySelector('.btn');
+btn.style.background = 'green';
 
 
 // EVENTS 
 
 // 1. event (click, mousehouver, mouseout) 2. function when this event happens (e = event)
-// btn.addEventListener('click', (e) => {
-//     e.preventDefault();
-//     document.querySelector('#my-form').style.background = '#ccc';
-// document.querySelector('body').classList.add('bg-dark');
-// document.querySelector('items').lastElementChild.innerHTML = '<h1>Hello</h1>';
-// //     console.log('click');
-// });
+btn.addEventListener('click', (e) => {
+    e.preventDefault();
+    document.querySelector('#my-form').style.background = '#ccc';
+document.querySelector('body').classList.add('bg-dark');
+document.querySelector('.items').lastElementChild.innerHTML = '<h1>Hello</h1>';
+    console.log('click');
+});
+
+
+// FORMS 
+
+var myForm = document.querySelector('#my-form');
+var nameInput = document.querySelector('#name');
+var emailInput = document.querySelector('#email');
+var msg = document.querySelector('.msg');
+var userList = document.querySelector('#users');
+
+myForm.addEventListener('submit', onsubmit);
+
+function onsubmit(e) {
+    e.preventDefault();
+
+    // console.log(nameInput.value);
+
+    if (nameInput.value === '' || emailInput.value === '') {
+        // alert('Please enter fields');
+        msg.classList.add('error');
+        msg.innerHTML = 'Please enter all fields';
+
+        setTimeout(() => msg.remove(), 3000);
+    } else {
+        // console.log('success');
+        var li = document.createElement('li');
+        li.appendChild(document.createTextNode
+            (`${nameInput.value} : ${emailInput.value}`));
+
+        userList.appendChild(li);
+
+        // Clear fields
+        nameInput.value = '';
+        emailInput.value = '';
+
+    
+    }
+}
+
 
 
