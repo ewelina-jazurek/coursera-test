@@ -103,6 +103,40 @@ console.log(testMap);
 var agesSquare = ages.map(age => Math.sqrt(age));
 console.log(agesSquare);
 
+var agesTimesTwo = ages.map(age => age * 2);
+console.log(agesTimesTwo);
+
+var ageMap = ages 
+.map(age => Math.sqrt(age))
+.map(age => age * 2);
+console.log(ageMap);
+
 
 // SORT
+
+// sort companies by start year 
+var sortedCompanies = companies.sort(function(c1, c2) {
+if(c1.start > c2.start) {
+    return 1;
+} else {
+    return -1;
+}
+});
+console.log(sortedCompanies);
+
+var sortedCompanies = companies.sort((a, b) => (a.start > b.start));
+console.log(sortedCompanies);
+
+
+// sort age 
+var sortAges = ages.sort((a,b) => a - b);
+console.log(sortAges);
+
+
 // REDUCE 
+
+let ageSum = 0;
+for(let i = 0; i < ages.length, i++) {
+    ageSum += ages[i];
+}
+console.log(ageSum); 
