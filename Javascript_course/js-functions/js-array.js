@@ -79,22 +79,22 @@ console.log(lastedTenYears);
 // MAP
 
 // create array of company names 
-var companyNames = companies.map(function(company) {
-  return company.name;  
+var companyNames = companies.map(function (company) {
+    return company.name;
 });
 console.log(companyNames);
 
-var test = companies.map(function(company) {
-    return 1;  
-  });
+var test = companies.map(function (company) {
+    return 1;
+});
 console.log(test);
 
-var testMap = companies.map(function(company) {
-    return `${company.name} [${company.start} - ${company.end}]`;  
-  });
+var testMap = companies.map(function (company) {
+    return `${company.name} [${company.start} - ${company.end}]`;
+});
 
 // the same - shorter method 
-  var testMap = companies.map(company => `${company.name} 
+var testMap = companies.map(company => `${company.name} 
   [${company.start} - ${company.end}]`);
 
 console.log(testMap);
@@ -106,21 +106,21 @@ console.log(agesSquare);
 var agesTimesTwo = ages.map(age => age * 2);
 console.log(agesTimesTwo);
 
-var ageMap = ages 
-.map(age => Math.sqrt(age))
-.map(age => age * 2);
+var ageMap = ages
+    .map(age => Math.sqrt(age))
+    .map(age => age * 2);
 console.log(ageMap);
 
 
 // SORT
 
 // sort companies by start year 
-var sortedCompanies = companies.sort(function(c1, c2) {
-if(c1.start > c2.start) {
-    return 1;
-} else {
-    return -1;
-}
+var sortedCompanies = companies.sort(function (c1, c2) {
+    if (c1.start > c2.start) {
+        return 1;
+    } else {
+        return -1;
+    }
 });
 console.log(sortedCompanies);
 
@@ -129,14 +129,50 @@ console.log(sortedCompanies);
 
 
 // sort age 
-var sortAges = ages.sort((a,b) => a - b);
+var sortAges = ages.sort((a, b) => a - b);
 console.log(sortAges);
 
 
 // REDUCE 
 
-let ageSum = 0;
-for(let i = 0; i < ages.length, i++) {
-    ageSum += ages[i];
-}
-console.log(ageSum); 
+// 1. option
+// let ageSum = 0;
+// for(let i = 0; i < ages.length; i++) {
+//     ageSum += ages[i];
+// }
+
+// 2. option = the same in other way: 
+// var ageSum = ages.reduce(function(total, age) {
+//     return total + age;
+// }, 0);
+
+// 3. option = the same in other way (the shortest): 
+var ageSum = ages.reduce((total, age) =>
+    total + age, 0);
+
+console.log(ageSum);
+
+
+// get total years for all companies 
+// 1. option
+// var totalYears = companies.reduce(function(total, company) {
+//     return total + (company.end - company.start);
+// }, 0);
+
+// 2. option = the same in other way (the shortest): 
+var totalYears = companies.reduce((total, company) =>
+   total + (company.end - company.start), 0);
+
+console.log(totalYears);
+
+
+// combine methods 
+
+const combined = ages
+.map(age => age * 2)
+.filter(age => age >= 40)
+.sort((a, b) => a - b)
+.reduce((a, b) => a + b, 0);
+
+console.log(combined);
+
