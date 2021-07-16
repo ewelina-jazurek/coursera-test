@@ -6,7 +6,7 @@ const calculatorValidator = ((calculator) => {
   }
 
   /**
-   * check if input is correc
+   * check if input is correct
    * @param {HTMLInputElement} inputField 
    * @param {string} operation
    * @returns {boolean} return validation state
@@ -14,6 +14,7 @@ const calculatorValidator = ((calculator) => {
   function checkIfFieldIsValid(inputField, operation) {
     if (operation === 'divide' && inputField.value == 0) {
       return false;
+      // console.log('dupa');
     } else {
       return true;
     }
