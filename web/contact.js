@@ -17,3 +17,9 @@
         });
     }, false);
 })();
+
+var zip = document.getElementById('zipCode');
+var maskOptions = {
+    mask: '00-000'
+};
+var mask = IMask(zipCode, maskOptions);
