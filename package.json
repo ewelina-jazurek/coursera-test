@@ -18,6 +18,7 @@
   "homepage": "https://github.com/ewelina-jazurek/coursera-test#readme",
   "dependencies": {
     "bootstrap": "^4.6.0",
+    "imask": "^6.1.0",
     "jquery": "^3.6.0"
   }
 }
