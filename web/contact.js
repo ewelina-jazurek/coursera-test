@@ -22,4 +22,12 @@ var zip = document.getElementById('zipCode');
 var maskOptions = {
     mask: '00-000'
 };
-var mask = IMask(zipCode, maskOptions);
+var zipMask = IMask(zipCode, maskOptions);
+
+var phone = document.getElementById('phone');
+var maskOptions = {
+    mask: '{(+48)}000-000-000',
+    lazy: false  // make placeholder always visible
+};
+
+var phoneMask = IMask(phone, maskOptions);

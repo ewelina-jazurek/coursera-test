@@ -102,13 +102,36 @@
                 </div>
 
                 <div class="col-md-3 mb-3">
-                    <label for="validationCustom05">Kod pocztowy</label>
+                    <label for="validationCustom04">Kod pocztowy</label>
                     <input type="text" class="form-control" id="zipCode" placeholder="Kod pocztowy" required>
                     <div class="invalid-feedback">
                         Proszę podać odpowiedni kod pocztowy
                     </div>
                 </div>
+
+                <div class="col-md-6 mb-3">
+                    <label for="validationCustom05">E-mail</label>
+                    <input type="email" class="form-control" id="e-mail" placeholder="example@example.com" required>
+                    <div class="invalid-feedback">
+                        Adres e-mail musi zawierać "@"
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <label for="validationCustom06">Telefon</label>
+                    <input type="number" class="form-control" id="phone" placeholder="(+48)123-456-789" required>
+                    <div class="invalid-feedback">
+                        Proszę podać poprawny numer telefonu
+                    </div>
+                </div>
+
             </div>
+
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Wiadomość</label>
+                <textarea class="form-control" id="textArea1" rows="10"></textarea>
+            </div>
+
             <div class="form-group">
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
