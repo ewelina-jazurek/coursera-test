@@ -26,8 +26,6 @@ var zipMask = IMask(zipCode, maskOptions);
 
 var phone = document.getElementById('phone');
 var maskOptions = {
-    mask: '{(+48)}000-000-000',
-    lazy: false  // make placeholder always visible
+    mask: '000 000 000'
 };
-
 var phoneMask = IMask(phone, maskOptions);
