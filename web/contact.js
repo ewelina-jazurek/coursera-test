@@ -7,6 +7,7 @@
         var forms = document.getElementsByClassName('needs-validation');
         // Loop over them and prevent submission
         var validation = Array.prototype.filter.call(forms, function (form) {
+
             form.addEventListener('submit', function (event) {
                 if (form.checkValidity() === false) {
                     event.preventDefault();
@@ -15,30 +16,23 @@
                 form.classList.add('was-validated');
 
                 var formData = new FormData(event.target);
+                formData.get('name');
+
             });
         });
     });
 
 
-    var zip = document.getElementById('zipCode');
-    var maskOptions = {
+    const zipElement = document.getElementById('zipCode');
+    const zipMaskOptions = {
         mask: '00-000'
     };
-    var zipMask = IMask(zipCode, maskOptions);
+    IMask(zipElement, zipMaskOptions);
 
-    var phone = document.getElementById('phone');
-    var maskOptions = {
+    const phoneElement = document.getElementById('phone');
+    var phoneMaskOptions = {
         mask: '000-000-000'
     };
-    var phoneMask = IMask(phone, maskOptions);
-
+    IMask(phoneElement, phoneMaskOptions);
 
 })();
-
-
-
-let contactForm = document.getElementById('contactForm');
-let formData = new FormData(contactForm);
-
-formData.get('name');
-formData.get('city');

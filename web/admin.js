@@ -3,3 +3,5 @@ if (password !== "dupa") {
     location = "./rolmet.html"
 }
 
+
+

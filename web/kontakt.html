@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>webRolmet</title>
+    <title>Kontakt</title>
 
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
 
@@ -85,7 +85,8 @@
             <div class="form-row">
                 <div class="col-md-4 mb-3">
                     <label for="validationCustom01">Imię</label>
-                    <input type="text" class="form-control" id="name" placeholder="Imię" name="name" required>
+                    <input type="text" class="form-control" id="name" placeholder="Imię" name="name" required
+                        minlength="3">
                     <div class="invalid-feedback">
                         Proszę uzupełnić puste pole
                     </div>
@@ -131,7 +132,8 @@
 
                 <div class="col-md-4 mb-3">
                     <label for="validationCustom06">Telefon</label>
-                    <input type="text" class="form-control" id="phone" placeholder="123-456-789" name="phone" required>
+                    <input type="text" class="form-control" id="phone" placeholder="123-456-789" name="phone"
+                        minlength="11" maxlength="11" required>
                     <div class="invalid-feedback">
                         Proszę podać poprawny numer telefonu
                     </div>
