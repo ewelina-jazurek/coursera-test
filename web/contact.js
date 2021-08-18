@@ -13,21 +13,24 @@
                     event.stopPropagation();
                 }
                 form.classList.add('was-validated');
-            }, false);
+
+                const formData = new FormData(event.target);
+            });
         });
-    }, false);
+    });
+
+
+    var zip = document.getElementById('zipCode');
+    var maskOptions = {
+        mask: '00-000'
+    };
+    var zipMask = IMask(zipCode, maskOptions);
+
+    var phone = document.getElementById('phone');
+    var maskOptions = {
+        mask: '000 000 000'
+    };
+    var phoneMask = IMask(phone, maskOptions);
+
+
 })();
-
-var zip = document.getElementById('zipCode');
-var maskOptions = {
-    mask: '00-000'
-};
-var zipMask = IMask(zipCode, maskOptions);
-
-var phone = document.getElementById('phone');
-var maskOptions = {
-    mask: '000 000 000'
-};
-var phoneMask = IMask(phone, maskOptions);
-
-
