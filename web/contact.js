@@ -14,7 +14,7 @@
                 }
                 form.classList.add('was-validated');
 
-                const formData = new FormData(event.target);
+                var formData = new FormData(event.target);
             });
         });
     });
@@ -28,9 +28,17 @@
 
     var phone = document.getElementById('phone');
     var maskOptions = {
-        mask: '000 000 000'
+        mask: '000-000-000'
     };
     var phoneMask = IMask(phone, maskOptions);
 
 
 })();
+
+
+
+let contactForm = document.getElementById('contactForm');
+let formData = new FormData(contactForm);
+
+formData.get('name');
+formData.get('city');

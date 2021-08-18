@@ -75,17 +75,17 @@
         <br>
         <br>
 
-        <div id="contactForm">
+        <div>
             Formularz kontaktowy
         </div>
 
         <br>
 
-        <form class="needs-validation" novalidate>
+        <form class="needs-validation" id="contactForm" name="contactForm" novalidate>
             <div class="form-row">
                 <div class="col-md-4 mb-3">
                     <label for="validationCustom01">Imię</label>
-                    <input type="text" class="form-control" id="validationCustom01" placeholder="Imię" required>
+                    <input type="text" class="form-control" id="name" placeholder="Imię" name="name" required>
                     <div class="invalid-feedback">
                         Proszę uzupełnić puste pole
                     </div>
@@ -93,7 +93,8 @@
 
                 <div class="col-md-4 mb-3">
                     <label for="validationCustom02">Nazwisko</label>
-                    <input type="text" class="form-control" id="validationCustom02" placeholder="Nazwisko" required>
+                    <input type="text" class="form-control" id="lastName" placeholder="Nazwisko" name="lastName"
+                        required>
                     <div class="invalid-feedback">
                         Proszę uzupełnić puste pole
                     </div>
@@ -121,7 +122,8 @@
 
                 <div class="col-md-6 mb-3">
                     <label for="validationCustom05">E-mail</label>
-                    <input type="email" class="form-control" id="e-mail" placeholder="example@example.com" required>
+                    <input type="email" class="form-control" id="e-mail" placeholder="example@example.com" name="eMail"
+                        required>
                     <div class="invalid-feedback">
                         Adres e-mail musi zawierać "@"
                     </div>
@@ -129,7 +131,7 @@
 
                 <div class="col-md-4 mb-3">
                     <label for="validationCustom06">Telefon</label>
-                    <input type="text" class="form-control" id="phone" placeholder="123-456-789" required>
+                    <input type="text" class="form-control" id="phone" placeholder="123-456-789" name="phone" required>
                     <div class="invalid-feedback">
                         Proszę podać poprawny numer telefonu
                     </div>
